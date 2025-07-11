@@ -100,8 +100,11 @@ export function CertificationsSection() {
                               </Badge>
                             ))}
                           </div>
-                          <p className="text-xs text-gray-500 font-mono">
-                            Credential ID: <span className="text-emerald-400 font-semibold">{cert.credentialId}</span>
+                          <p className="text-xs text-gray-400 font-mono">
+                            Credential ID:{" "}
+                            <span className="text-yellow-300 font-bold bg-gray-800/50 px-2 py-1 rounded">
+                              {cert.credentialId}
+                            </span>
                           </p>
                         </div>
                       </div>
@@ -160,8 +163,11 @@ export function CertificationsSection() {
                               </Badge>
                             ))}
                           </div>
-                          <p className="text-xs text-gray-500 font-mono">
-                            Credential ID: <span className="text-emerald-400 font-semibold">{cert.credentialId}</span>
+                          <p className="text-xs text-gray-400 font-mono">
+                            Credential ID:{" "}
+                            <span className="text-green-300 font-bold bg-gray-800/50 px-2 py-1 rounded">
+                              {cert.credentialId}
+                            </span>
                           </p>
                         </div>
                       </div>
@@ -172,27 +178,27 @@ export function CertificationsSection() {
             ))}
           </div>
 
-          {/* Certification Stats */}
-          <Card className="bg-gradient-to-br from-violet-500/10 via-blue-500/10 to-teal-500/10 border-violet-400/30 hover:border-violet-400/50 transition-all duration-300">
+          {/* Certification Stats - High Contrast Colors */}
+          <Card className="bg-gray-800/90 border-gray-600 hover:border-yellow-400/50 transition-all duration-300">
             <CardContent className="p-8">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div className="group">
-                  <div className="text-3xl font-bold text-violet-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl font-bold text-yellow-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     {certifications.length}
                   </div>
-                  <p className="text-sm text-violet-200">Active Certifications</p>
+                  <p className="text-sm text-gray-100 font-medium">Active Certifications</p>
                 </div>
                 <div className="group">
-                  <div className="text-3xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl font-bold text-green-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     100%
                   </div>
-                  <p className="text-sm text-blue-200">Verification Rate</p>
+                  <p className="text-sm text-gray-100 font-medium">Verification Rate</p>
                 </div>
                 <div className="group">
-                  <div className="text-3xl font-bold text-teal-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl font-bold text-blue-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     2025
                   </div>
-                  <p className="text-sm text-teal-200">Latest Certification</p>
+                  <p className="text-sm text-gray-100 font-medium">Latest Certification</p>
                 </div>
               </div>
             </CardContent>

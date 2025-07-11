@@ -156,34 +156,34 @@ export function SkillsSection() {
             })}
           </div>
 
-          {/* Key Metrics */}
-          <Card className="bg-gradient-to-br from-indigo-500/10 via-purple-500/10 to-pink-500/10 border-indigo-400/30 hover:border-indigo-400/50 transition-all duration-300">
+          {/* Key Metrics - High Contrast Colors */}
+          <Card className="bg-gray-800/90 border-gray-600 hover:border-yellow-400/50 transition-all duration-300">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-semibold mb-8 text-center text-indigo-300">Key Achievements</h3>
+              <h3 className="text-2xl font-semibold mb-8 text-center text-white">Key Achievements</h3>
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center group">
-                  <div className="text-4xl font-bold text-indigo-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-4xl font-bold text-yellow-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     7.9+
                   </div>
-                  <p className="text-sm text-indigo-200">Years of Experience</p>
+                  <p className="text-sm text-gray-100 font-medium">Years of Experience</p>
                 </div>
                 <div className="text-center group">
-                  <div className="text-4xl font-bold text-purple-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-4xl font-bold text-green-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     5+
                   </div>
-                  <p className="text-sm text-purple-200">Projects Completed</p>
+                  <p className="text-sm text-gray-100 font-medium">Projects Completed</p>
                 </div>
                 <div className="text-center group">
-                  <div className="text-4xl font-bold text-pink-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-4xl font-bold text-blue-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     6+
                   </div>
-                  <p className="text-sm text-pink-200">{"Teams Managed"}</p>
+                  <p className="text-sm text-gray-100 font-medium">{"Teams Managed"}</p>
                 </div>
                 <div className="text-center group">
-                  <div className="text-4xl font-bold text-cyan-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-4xl font-bold text-purple-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
                     100%
                   </div>
-                  <p className="text-sm text-cyan-200">Client Satisfaction</p>
+                  <p className="text-sm text-gray-100 font-medium">Client Satisfaction</p>
                 </div>
               </div>
             </CardContent>

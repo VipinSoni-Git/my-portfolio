@@ -77,10 +77,10 @@ export function HeroSection() {
   }
 
   const stats = [
-    { value: "7.9+", label: "Years of Experience" },
-    { value: "5+", label: "Projects Completed" },
-    { value: "6+", label: "Teams Managed" },
-    { value: "100%", label: "Client Satisfaction" },
+    { value: "7.9+", label: "Years of Experience", color: "text-yellow-300" },
+    { value: "5+", label: "Projects Completed", color: "text-green-300" },
+    { value: "6+", label: "Teams Managed", color: "text-blue-300" },
+    { value: "100%", label: "Client Satisfaction", color: "text-purple-300" },
   ]
 
   return (
@@ -170,18 +170,20 @@ export function HeroSection() {
               </div>
             </div>
 
-            {/* Right Column - Stats */}
+            {/* Right Column - Stats with High Contrast */}
             <div className="space-y-8">
               <div className="grid grid-cols-2 gap-6">
                 {stats.map((stat, index) => (
                   <div
                     key={index}
-                    className="p-6 rounded-xl bg-gray-800/50 border border-gray-700/50 hover:border-yellow-400/50 transition-colors group"
+                    className="p-6 rounded-xl bg-gray-800/80 border border-gray-600 hover:border-yellow-400/50 transition-colors group"
                   >
-                    <div className="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform">
+                    <div
+                      className={`text-3xl font-bold ${stat.color} mb-2 group-hover:scale-110 transition-transform drop-shadow-lg`}
+                    >
                       {stat.value}
                     </div>
-                    <div className="text-gray-400 text-sm">{stat.label}</div>
+                    <div className="text-gray-100 text-sm font-medium">{stat.label}</div>
                   </div>
                 ))}
               </div>
