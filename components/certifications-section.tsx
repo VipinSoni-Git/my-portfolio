@@ -11,7 +11,7 @@ export function CertificationsSection() {
     {
       title: "Power BI Certification",
       issuer: "TuteDude",
-      date: "2024",
+      date: "2025",
       credentialId: "TD-VIPI-PB-1158",
       url: "https://upskill.tutedude.com/certificate/TD-VIPI-PB-1158",
       description:
@@ -101,7 +101,7 @@ export function CertificationsSection() {
                             ))}
                           </div>
                           <p className="text-xs text-gray-500 font-mono">
-                            Credential ID: <span className="text-yellow-400">{cert.credentialId}</span>
+                            Credential ID: <span className="text-emerald-400 font-semibold">{cert.credentialId}</span>
                           </p>
                         </div>
                       </div>
@@ -161,7 +161,7 @@ export function CertificationsSection() {
                             ))}
                           </div>
                           <p className="text-xs text-gray-500 font-mono">
-                            Credential ID: <span className="text-green-400">{cert.credentialId}</span>
+                            Credential ID: <span className="text-emerald-400 font-semibold">{cert.credentialId}</span>
                           </p>
                         </div>
                       </div>
@@ -173,26 +173,26 @@ export function CertificationsSection() {
           </div>
 
           {/* Certification Stats */}
-          <Card className="bg-gradient-to-r from-yellow-400/10 to-green-400/10 border-yellow-400/20">
+          <Card className="bg-gradient-to-br from-violet-500/10 via-blue-500/10 to-teal-500/10 border-violet-400/30 hover:border-violet-400/50 transition-all duration-300">
             <CardContent className="p-8">
               <div className="grid md:grid-cols-3 gap-8 text-center">
                 <div className="group">
-                  <div className="text-3xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform">
+                  <div className="text-3xl font-bold text-violet-400 mb-2 group-hover:scale-110 transition-transform">
                     {certifications.length}
                   </div>
-                  <p className="text-sm text-gray-400">Active Certifications</p>
-                </div>
-                <div className="group">
-                  <div className="text-3xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform">
-                    100%
-                  </div>
-                  <p className="text-sm text-gray-400">Verification Rate</p>
+                  <p className="text-sm text-violet-200">Active Certifications</p>
                 </div>
                 <div className="group">
                   <div className="text-3xl font-bold text-blue-400 mb-2 group-hover:scale-110 transition-transform">
-                    2024
+                    100%
                   </div>
-                  <p className="text-sm text-gray-400">Latest Certification</p>
+                  <p className="text-sm text-blue-200">Verification Rate</p>
+                </div>
+                <div className="group">
+                  <div className="text-3xl font-bold text-teal-400 mb-2 group-hover:scale-110 transition-transform">
+                    2025
+                  </div>
+                  <p className="text-sm text-teal-200">Latest Certification</p>
                 </div>
               </div>
             </CardContent>
