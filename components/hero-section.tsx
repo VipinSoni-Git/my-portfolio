@@ -105,7 +105,7 @@ export function HeroSection() {
                 </div>
 
                 <div className="space-y-4">
-                  <p className="text-gray-400 text-lg font-mono">Data Analyst & MIS Expert</p>
+                  <p className="text-gray-400 text-lg font-mono">Business Analyst &amp; MIS Expert</p>
                   <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
                     <span className="text-white">Hello I'm</span>
                     <br />
