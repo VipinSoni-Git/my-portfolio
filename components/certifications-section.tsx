@@ -82,11 +82,11 @@ export function CertificationsSection() {
                             {cert.verified && <CheckCircle className="h-5 w-5 text-green-400" />}
                             <Badge className="bg-green-400/20 text-green-400 border-green-400/30">Featured</Badge>
                           </div>
-                          <div className="flex items-center gap-4 text-sm text-gray-400 mb-3">
-                            <span className="font-medium text-white">{cert.issuer}</span>
+                          <div className="flex items-center gap-4 text-sm mb-3">
+                            <span className="font-bold text-white text-base">{cert.issuer}</span>
                             <div className="flex items-center gap-1">
-                              <Calendar className="h-4 w-4" />
-                              <span>{cert.date}</span>
+                              <Calendar className="h-4 w-4 text-gray-300" />
+                              <span className="font-bold text-white">{cert.date}</span>
                             </div>
                           </div>
                           <p className="text-gray-300 mb-4 leading-relaxed">{cert.description}</p>
@@ -100,9 +100,9 @@ export function CertificationsSection() {
                               </Badge>
                             ))}
                           </div>
-                          <p className="text-xs text-gray-400 font-mono">
+                          <p className="text-sm text-gray-300 font-mono">
                             Credential ID:{" "}
-                            <span className="text-yellow-300 font-bold bg-gray-800/50 px-2 py-1 rounded">
+                            <span className="text-yellow-300 font-bold bg-gray-800/70 px-3 py-1 rounded-md border border-yellow-400/30">
                               {cert.credentialId}
                             </span>
                           </p>

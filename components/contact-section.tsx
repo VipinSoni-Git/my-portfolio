@@ -222,29 +222,30 @@ export function ContactSection() {
                 </div>
               </div>
 
-              <Card className="bg-gradient-to-r from-yellow-400/10 to-green-400/10 border-yellow-400/20">
+              {/* Enhanced Available for Section */}
+              <Card className="bg-gray-800/90 border-gray-600 hover:border-yellow-400/50 transition-all duration-300">
                 <CardContent className="p-6">
-                  <h4 className="font-semibold mb-3 text-white">Available for:</h4>
-                  <ul className="space-y-2 text-sm text-gray-300">
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span>Data Analytics Consulting</span>
+                  <h4 className="font-semibold mb-4 text-white text-lg">Available for:</h4>
+                  <ul className="space-y-3 text-sm mb-6">
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-gray-100 font-medium">Data Analytics Consulting</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span>Power BI Dashboard Development</span>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-gray-100 font-medium">Power BI Dashboard Development</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span>MIS Implementation & Optimization</span>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-gray-100 font-medium">MIS Implementation & Optimization</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span>Python Analytics Solutions</span>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-gray-100 font-medium">Python Analytics Solutions</span>
                     </li>
-                    <li className="flex items-center gap-2">
-                      <CheckCircle className="h-4 w-4 text-green-400" />
-                      <span>Full-time Opportunities</span>
+                    <li className="flex items-center gap-3">
+                      <CheckCircle className="h-4 w-4 text-green-400 flex-shrink-0" />
+                      <span className="text-gray-100 font-medium">Full-time Opportunities</span>
                     </li>
                   </ul>
                   <div className="mt-6">
