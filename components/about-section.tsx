@@ -56,7 +56,7 @@ export function AboutSection() {
               <p className="text-lg text-gray-300 leading-relaxed">
                 My passion lies in leveraging advanced analytics tools like{" "}
                 <span className="text-yellow-400 font-semibold">Power BI</span>, {" "}
-                <span className="text-yellow-400 font-semibold">MySQL</span> and{" "}
+                <span className="text-blue-400 font-semibold">MySQL</span> and{" "}
                 <span className="text-green-400 font-semibold">Python</span> to create compelling visualizations and
                 automated reporting solutions.
               </p>
