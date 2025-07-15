@@ -43,7 +43,7 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
-                I'm a detail-focused Data Analyst with expertise in forecasting, process validation, and business needs
+                I'm a detail-focused Business Analyst with expertise in forecasting, process validation, and business needs
                 analysis. With over <span className="text-yellow-400 font-semibold">7.9 years of experience</span>{" "}
                 across multiple MNCs, I specialize in transforming complex datasets into strategic business insights.
               </p>

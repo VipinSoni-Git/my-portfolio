@@ -32,7 +32,7 @@ export function ResumeSection() {
       current: true,
     },
     {
-      title: "Senior Data Analyst",
+      title: "Senior Business Analyst",
       company: "Sagacious IP",
       location: "Gurugram, HR",
       period: "Aug 2017 – Nov 2023",
@@ -48,7 +48,7 @@ export function ResumeSection() {
       current: false,
     },
     {
-      title: "Freelance Developer & Data Analyst",
+      title: "Freelance Developer & Business Analyst",
       company: "Independent",
       location: "New Delhi, DL",
       period: "Feb 2014 – Jul 2017",
