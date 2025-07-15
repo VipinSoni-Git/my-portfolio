@@ -44,7 +44,7 @@ export function AboutSection() {
             <div className="space-y-6">
               <p className="text-lg text-gray-300 leading-relaxed">
                 I'm a detail-focused Business Analyst with expertise in forecasting, process validation, and business needs
-                analysis. With over <span className="text-yellow-400 font-semibold">7.9 years of experience</span>{" "}
+                analysis. With over <span className="text-yellow-400 font-semibold">7.11 years of experience</span>{" "}
                 across multiple MNCs, I specialize in transforming complex datasets into strategic business insights.
               </p>
               <p className="text-lg text-gray-300 leading-relaxed">
@@ -99,7 +99,7 @@ export function AboutSection() {
                   <h3 className="text-xl font-semibold text-blue-400 mb-3 group-hover:text-blue-300 transition-colors">
                     Experience
                   </h3>
-                  <p className="text-white">7.9+ Years in Data Analytics & MIS</p>
+                  <p className="text-white">7.11+ Years in Data Analytics & MIS</p>
                   <p className="text-gray-400">Multiple MNCs & Industries</p>
                 </CardContent>
               </Card>

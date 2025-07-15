@@ -13,7 +13,7 @@ const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mon
 export const metadata: Metadata = {
   title: "Vipin Soni - Business Analyst & MIS Expert",
   description:
-    "Professional portfolio of Vipin Soni, experienced Business Analyst and MIS Assistant Manager with 7.9+ years of experience in data analytics, Power BI, and Python.",
+    "Professional portfolio of Vipin Soni, experienced Business Analyst and MIS Assistant Manager with 7.11+ years of experience in data analytics, Power BI, and Python.",
   keywords: "Business Analyst, MIS, Power BI, Python, Data Analytics, Business Intelligence",
   authors: [{ name: "Vipin Soni" }],
   openGraph: {

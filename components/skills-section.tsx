@@ -100,7 +100,7 @@ export function SkillsSection() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-green-400 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300">
-              Technical expertise developed over 7.9+ years in data analytics and business intelligence
+              Technical expertise developed over 7.11+ years in data analytics and business intelligence
             </p>
           </div>
 
@@ -163,7 +163,7 @@ export function SkillsSection() {
               <div className="grid md:grid-cols-4 gap-8">
                 <div className="text-center group">
                   <div className="text-4xl font-bold text-yellow-300 mb-2 group-hover:scale-110 transition-transform drop-shadow-lg">
-                    7.9+
+                    7.11+
                   </div>
                   <p className="text-sm text-gray-100 font-medium">Years of Experience</p>
                 </div>

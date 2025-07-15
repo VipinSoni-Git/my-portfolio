@@ -77,7 +77,7 @@ export function HeroSection() {
   }
 
   const stats = [
-    { value: "7.9+", label: "Years of Experience", color: "text-yellow-300" },
+    { value: "7.11+", label: "Years of Experience", color: "text-yellow-300" },
     { value: "5+", label: "Projects Completed", color: "text-green-300" },
     { value: "6+", label: "Teams Managed", color: "text-blue-300" },
     { value: "100%", label: "Client Satisfaction", color: "text-purple-300" },
@@ -116,7 +116,7 @@ export function HeroSection() {
                 <p className="text-xl text-gray-300 leading-relaxed max-w-2xl">
                   I excel at crafting elegant data solutions and am proficient in various programming languages and
                   analytics technologies. Transforming complex data into actionable insights with{" "}
-                  <span className="text-yellow-400 font-semibold">7.9+ years</span> of experience.
+                  <span className="text-yellow-400 font-semibold">7.11+ years</span> of experience.
                 </p>
               </div>
 
