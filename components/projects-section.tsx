@@ -20,7 +20,7 @@ export function ProjectsSection() {
       technologies: ["Power BI", "DAX", "Data Modeling", "Excel", "Business Intelligence"],
       icon: BarChart3,
       githubUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
-      liveUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
+      liveUrl: "https://app.powerbi.com/view?r=eyJrIjoiNjVjM2Y1MzgtMjdmMi00ZjM2LThjMmQtNmQ3NzViZjI5OGNkIiwidCI6IjI1NTU3ZjUyLWRjMjQtNDI0MS1hNGEzLTI2ZjU1NzY2MTBjZiJ9",
       featured: true,
       hasSlideshow: true,
       embedIframe: true,
