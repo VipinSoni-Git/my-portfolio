@@ -20,9 +20,10 @@ export function ProjectsSection() {
       technologies: ["Power BI", "DAX", "Data Modeling", "Excel", "Business Intelligence"],
       icon: BarChart3,
       githubUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
-      liveUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
+      liveUrl: "https://app.powerbi.com/view?r=eyJrIjoiNjVjM2Y1MzgtMjdmMi00ZjM2LThjMmQtNmQ3NzViZjI5OGNkIiwidCI6IjI1NTU3ZjUyLWRjMjQtNDI0MS1hNGEzLTI2ZjU1NzY2MTBjZiJ9",
       featured: true,
       hasSlideshow: true,
+      embedIframe: true,
       metrics: {
         totalSales: "$1.20M",
         avgSales: "$140.99",
@@ -168,13 +169,22 @@ export function ProjectsSection() {
 
                       {/* Project Visual */}
                       <div className="relative">
-                        {project.hasSlideshow ? (
-                          <BlinkitSlideshow />
-                        ) : (
-                          <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-green-400/20 flex items-center justify-center">
-                            <project.icon className="h-16 w-16 text-yellow-400/50" />
-                          </div>
-                        )}
+                        {project.embedIframe ? (
+                        <iframe
+                          title={project.title}
+                          src={project.liveUrl}
+                          width="100%"
+                          height="100%"
+                          className="w-full aspect-video rounded-b-lg border-0"
+                          allowFullScreen
+                        />
+                      ) : project.hasSlideshow ? (
+                        <BlinkitSlideshow />
+                      ) : (
+                        <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-green-400/20 flex items-center justify-center">
+                          <project.icon className="h-16 w-16 text-yellow-400/50" />
+                        </div>
+                      )}
                       </div>
                     </div>
                   </CardContent>
