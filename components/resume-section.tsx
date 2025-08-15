@@ -94,7 +94,7 @@ export function ResumeSection() {
             </h2>
             <div className="w-20 h-1 bg-gradient-to-r from-yellow-400 to-green-400 mx-auto mb-8"></div>
             <p className="text-xl text-gray-300 mb-8">
-              Professional journey spanning 7.11+ years in data analytics and business intelligence
+              Professional journey spanning 7.9+ years in data analytics and business intelligence
             </p>
             <Button
               size="lg"

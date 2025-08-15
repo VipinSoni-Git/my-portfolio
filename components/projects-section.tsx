@@ -20,10 +20,9 @@ export function ProjectsSection() {
       technologies: ["Power BI", "DAX", "Data Modeling", "Excel", "Business Intelligence"],
       icon: BarChart3,
       githubUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
-      liveUrl: "https://app.powerbi.com/view?r=eyJrIjoiNjVjM2Y1MzgtMjdmMi00ZjM2LThjMmQtNmQ3NzViZjI5OGNkIiwidCI6IjI1NTU3ZjUyLWRjMjQtNDI0MS1hNGEzLTI2ZjU1NzY2MTBjZiJ9",
+      liveUrl: "https://github.com/VipinSoni-Git/Blinkit-Sales-Dashboard",
       featured: true,
       hasSlideshow: true,
-      embedIframe: true,
       metrics: {
         totalSales: "$1.20M",
         avgSales: "$140.99",
@@ -98,11 +97,7 @@ export function ProjectsSection() {
                   onMouseLeave={() => setHoveredProject(null)}
                 >
                   <CardContent className="p-0">
-                    <div
-                      className={`gap-0 ${
-                        project.embedIframe ? "flex flex-col" : "grid lg:grid-cols-2"
-                      }`}
-                    >
+                    <div className="grid lg:grid-cols-2 gap-0">
                       {/* Project Content */}
                       <div className="p-8 flex flex-col justify-center">
                         <div className="flex items-center gap-3 mb-4">
@@ -173,24 +168,13 @@ export function ProjectsSection() {
 
                       {/* Project Visual */}
                       <div className="relative">
-                        {project.embedIframe ? (
-  <div className="p-4">
-    <iframe
-      title={project.title}
-      src={project.liveUrl}
-      width="100%"
-      height="450"
-      className="w-full rounded-lg border-0"
-      allowFullScreen
-    />
-  </div>
-) : project.hasSlideshow ? (
-  <BlinkitSlideshow />
-) : (
-  <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-green-400/20 flex items-center justify-center">
-    <project.icon className="h-16 w-16 text-yellow-400/50" />
-  </div>
-)}
+                        {project.hasSlideshow ? (
+                          <BlinkitSlideshow />
+                        ) : (
+                          <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-green-400/20 flex items-center justify-center">
+                            <project.icon className="h-16 w-16 text-yellow-400/50" />
+                          </div>
+                        )}
                       </div>
                     </div>
                   </CardContent>

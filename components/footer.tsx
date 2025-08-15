@@ -44,7 +44,7 @@ export function Footer() {
             <div className="text-center md:text-left">
               <h3 className="text-xl font-bold text-yellow-400 mb-2">Vipin Soni</h3>
               <p className="text-sm text-gray-400 max-w-md">
-                Business Analyst & MIS Expert transforming complex data into actionable business insights.
+                Data Analyst & MIS Expert transforming complex data into actionable business insights.
               </p>
             </div>
 
