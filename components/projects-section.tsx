@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github, BarChart3, Code, Database, TrendingUp, Eye } from "lucide-react"
 import Link from "next/link"
 import { BlinkitSlideshow } from "./blinkit-slideshow"
+import Image from "next/image"
 
 export function ProjectsSection() {
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
@@ -28,6 +29,23 @@ export function ProjectsSection() {
         avgSales: "$140.99",
         items: "8523",
         rating: "3.92",
+      },
+    },
+    {
+      title: "SaleSight Intelligence Project",
+      description:
+        "End-to-end PostgreSQL project exploring retail sales data through advanced SQL queries for customer segmentation, product performance, and revenue insights. Includes data cleaning, trend analysis, anomaly detection, and insight-driven reporting for business intelligence use cases.",
+      category: "SQL Analytics",
+      technologies: ["PostgreSQL", "SQL Queries", "Data Cleaning", "EDA", "Analytics", "Business Intelligence"],
+      icon: Database,
+      githubUrl: "https://github.com/VipinSoni-Git/SaleSight-Intelligence-SQL-Project-P1",
+      liveUrl: "https://github.com/VipinSoni-Git/SaleSight-Intelligence-SQL-Project-P1",
+      featured: true,
+      hasSlideshow: false,
+      imagePath: "/images/sql-project-code.png",
+      metrics: {
+        keyInsights: "15+",
+        codeInsights: "10+",
       },
     },
     {
@@ -128,14 +146,29 @@ export function ProjectsSection() {
 
                         {project.metrics && (
                           <div className="grid grid-cols-2 gap-4 mb-6">
-                            <div className="bg-yellow-400/10 rounded-lg p-3">
-                              <div className="text-yellow-400 font-semibold text-sm">Total Sales</div>
-                              <div className="text-white text-lg font-bold">{project.metrics.totalSales}</div>
-                            </div>
-                            <div className="bg-green-400/10 rounded-lg p-3">
-                              <div className="text-green-400 font-semibold text-sm">Avg Sales</div>
-                              <div className="text-white text-lg font-bold">{project.metrics.avgSales}</div>
-                            </div>
+                            {project.metrics.totalSales ? (
+                              <>
+                                <div className="bg-yellow-400/10 rounded-lg p-3">
+                                  <div className="text-yellow-400 font-semibold text-sm">Total Sales</div>
+                                  <div className="text-white text-lg font-bold">{project.metrics.totalSales}</div>
+                                </div>
+                                <div className="bg-green-400/10 rounded-lg p-3">
+                                  <div className="text-green-400 font-semibold text-sm">Avg Sales</div>
+                                  <div className="text-white text-lg font-bold">{project.metrics.avgSales}</div>
+                                </div>
+                              </>
+                            ) : (
+                              <>
+                                <div className="bg-blue-400/10 rounded-lg p-3">
+                                  <div className="text-blue-400 font-semibold text-sm">Key Insights</div>
+                                  <div className="text-white text-lg font-bold">{project.metrics.keyInsights}</div>
+                                </div>
+                                <div className="bg-purple-400/10 rounded-lg p-3">
+                                  <div className="text-purple-400 font-semibold text-sm">Code Insights</div>
+                                  <div className="text-white text-lg font-bold">{project.metrics.codeInsights}</div>
+                                </div>
+                              </>
+                            )}
                           </div>
                         )}
 
@@ -170,6 +203,16 @@ export function ProjectsSection() {
                       <div className="relative">
                         {project.hasSlideshow ? (
                           <BlinkitSlideshow />
+                        ) : project.imagePath ? (
+                          <div className="bg-gray-800 overflow-hidden h-full w-full">
+                            <Image
+                              src={project.imagePath || "/placeholder.svg"}
+                              alt={project.title}
+                              fill
+                              className="object-contain hover:scale-105 transition-transform duration-300"
+                              sizes="(max-width: 1024px) 100vw, 50vw"
+                            />
+                          </div>
                         ) : (
                           <div className="aspect-video bg-gradient-to-br from-yellow-400/20 to-green-400/20 flex items-center justify-center">
                             <project.icon className="h-16 w-16 text-yellow-400/50" />
