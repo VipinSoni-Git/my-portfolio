@@ -56,20 +56,25 @@ export function AboutSection() {
               <p className="text-lg text-gray-300 leading-relaxed">
                 My passion lies in leveraging advanced analytics tools like{" "}
                 <span className="text-blue-400 font-semibold">SQL</span> ,{" "}
-                <span className="text-yellow-400 font-semibold">Power BI</span> and{" "}
-                <span className="text-green-400 font-semibold">Python</span> to create compelling visualizations and
-                automated reporting solutions.
+                <span className="text-yellow-400 font-semibold">Power BI</span> ,{" "}
+                <span className="text-green-400 font-semibold">Python</span> , and{" "}
+                <span className="text-purple-400 font-semibold">R</span> to build compelling visualizations, automated
+                reporting solutions, and data-driven insights. I am also exploring the potential of{" "}
+                <span className="text-cyan-400 font-semibold">GenAI</span> to enhance analytical workflows and create
+                intelligent, scalable solutions.
               </p>
 
               <div className="flex flex-wrap gap-3 pt-4">
-                {["Data Analytics", "Power BI", "Python", "MIS", "Business Intelligence", "Excel"].map((skill) => (
-                  <span
-                    key={skill}
-                    className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 hover:border-yellow-400 hover:text-yellow-400 transition-colors"
-                  >
-                    {skill}
-                  </span>
-                ))}
+                {["Data Analytics", "Power BI", "Python", "R", "GenAI", "MIS", "Business Intelligence", "Excel"].map(
+                  (skill) => (
+                    <span
+                      key={skill}
+                      className="px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-gray-300 hover:border-yellow-400 hover:text-yellow-400 transition-colors"
+                    >
+                      {skill}
+                    </span>
+                  ),
+                )}
               </div>
             </div>
 
